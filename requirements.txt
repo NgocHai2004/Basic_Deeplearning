@@ -1,0 +1,6 @@
+pickle-mixin
+pathlib
+opencv-python
+torchvision
+torch
+scikit-learn
