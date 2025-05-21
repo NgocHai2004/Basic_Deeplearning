@@ -72,6 +72,15 @@ class Train:
             all_predictions = [prediction.item() for prediction in all_predictions]
             print("Epoch {}".format(epoch+1))
             print(classification_report(all_labels, all_predictions))
+            # Lưu model sau khi train xong
+    
+        save_dir = Path('saved_models')
+        save_dir.mkdir(parents=True, exist_ok=True)  # tạo thư mục nếu chưa có
+
+        model_path = save_dir / 'final_model.pth'
+        torch.save(self.model.state_dict(), model_path)
+
+        print(f"\nModel đã được lưu tại: {model_path.resolve()}")
 
 
 
