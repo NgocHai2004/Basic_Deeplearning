@@ -4,3 +4,4 @@ opencv-python
 torchvision
 torch
 scikit-learn
+numpy

@@ -1,10 +1,10 @@
 import torch
 from torchvision import transforms
 from PIL import Image
-from Model import SimpleNeuralNetwork
+from Build_model import SimpleNeuralNetwork
 import matplotlib.pyplot as plt
 model = SimpleNeuralNetwork(num_classes=10)
-model.load_state_dict(torch.load('final_model.pth'))  # path tới file pth bạn vừa tải
+model.load_state_dict(torch.load('Model/final_model.pth'))  # path tới file pth bạn vừa tải
 model.eval()
 image_path = 'Screenshot 2025-05-21 172844.png'
 image = Image.open(image_path).convert('RGB')

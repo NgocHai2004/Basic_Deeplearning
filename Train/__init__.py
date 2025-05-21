@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from Dataset import Dataset_folder
-from Model import SimpleNeuralNetwork
+from Bulid_model import SimpleNeuralNetwork
 from torch.utils.data import DataLoader
 import torch.nn as nn
 import torch

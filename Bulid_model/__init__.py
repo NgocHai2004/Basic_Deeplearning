@@ -3,6 +3,9 @@ from torch import nn
 
 class SimpleNeuralNetwork(nn.Module):
     def __init__(self, num_classes):
+        '''
+        num_class: số lượng class dự đoán
+        '''
         super().__init__()
         self.num_classes:int = num_classes
         self.flatten = nn.Flatten()
